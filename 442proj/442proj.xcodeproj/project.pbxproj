@@ -14,6 +14,7 @@
 		0BF623ED214EDAF9008FBB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF623EB214EDAF9008FBB12 /* LaunchScreen.storyboard */; };
 		0BF623F8214EDAF9008FBB12 /* _42projTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF623F7214EDAF9008FBB12 /* _42projTests.swift */; };
 		0BF62403214EDAF9008FBB12 /* _42projUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF62402214EDAF9008FBB12 /* _42projUITests.swift */; };
+		365D497621504D4400A788C5 /* testing.c in Sources */ = {isa = PBXBuildFile; fileRef = 365D497521504D4400A788C5 /* testing.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		0BF623FE214EDAF9008FBB12 /* 442projUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 442projUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF62402214EDAF9008FBB12 /* _42projUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _42projUITests.swift; sourceTree = "<group>"; };
 		0BF62404214EDAF9008FBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365D497421504D4400A788C5 /* testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = testing.h; path = 442projTests/testing.h; sourceTree = "<group>"; };
+		365D497521504D4400A788C5 /* testing.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = testing.c; path = 442projTests/testing.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		0BF623D6214EDAF6008FBB12 = {
 			isa = PBXGroup;
 			children = (
+				365D497421504D4400A788C5 /* testing.h */,
+				365D497521504D4400A788C5 /* testing.c */,
 				0BF623E1214EDAF6008FBB12 /* 442proj */,
 				0BF623F6214EDAF9008FBB12 /* 442projTests */,
 				0BF62401214EDAF9008FBB12 /* 442projUITests */,
@@ -194,6 +199,7 @@
 				TargetAttributes = {
 					0BF623DE214EDAF6008FBB12 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					0BF623F2214EDAF9008FBB12 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -259,6 +265,7 @@
 			files = (
 				0BF623E5214EDAF6008FBB12 /* ViewController.swift in Sources */,
 				0BF623E3214EDAF6008FBB12 /* AppDelegate.swift in Sources */,
+				365D497621504D4400A788C5 /* testing.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NDXW42YCC7;
 				INFOPLIST_FILE = 442proj/Info.plist;
@@ -441,6 +449,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "hello.-42proj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NDXW42YCC7;
 				INFOPLIST_FILE = 442proj/Info.plist;
