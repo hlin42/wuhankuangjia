@@ -17,14 +17,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     //MAP
     @IBOutlet weak var map: MKMapView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
     }
-
+    
     @IBAction func GPSButton(_ sender: AnyObject) {
         var currentLocation: CLLocation!
         if(CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||
@@ -50,6 +50,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
