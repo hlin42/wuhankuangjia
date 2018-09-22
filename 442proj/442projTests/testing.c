@@ -7,6 +7,3 @@
 //
 
 #include "testing.h"
-
-#hi guysddddd
-//kevin has a small dick
