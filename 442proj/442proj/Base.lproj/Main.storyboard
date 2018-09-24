@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ck5-KA-Q2F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ck5-KA-Q2F">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -76,6 +76,7 @@
                     <connections>
                         <outlet property="Camera" destination="kUD-tM-eVc" id="OP9-dt-vZS"/>
                         <outlet property="Main" destination="ya9-gx-AFp" id="5Ce-XU-NcI"/>
+                        <outlet property="Yo" destination="Fva-vR-30I" id="rD5-HK-1li"/>
                         <outlet property="userImage" destination="mD6-y0-Ruh" id="0I8-gO-q8C"/>
                     </connections>
                 </viewController>
@@ -83,16 +84,16 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="33.423913043478265"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="RbR-bj-K0o">
             <objects>
-                <viewController id="CMa-yc-oyp" sceneMemberID="viewController">
+                <viewController id="CMa-yc-oyp" customClass="SecondViewController" customModule="_42proj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZZT-SZ-QDv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIKE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXc-IQ-grE">
-                                <rect key="frame" x="215" y="179" width="36" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-vR-30I">
+                                <rect key="frame" x="20" y="64" width="394" height="672"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -103,10 +104,13 @@
                         <viewLayoutGuide key="safeArea" id="xXW-yR-9AH"/>
                     </view>
                     <navigationItem key="navigationItem" id="TOO-K9-jrb"/>
+                    <connections>
+                        <outlet property="Testing" destination="Fva-vR-30I" id="xSd-hX-XYI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSN-Q2-Cax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1211.5942028985507" y="739.4021739130435"/>
+            <point key="canvasLocation" x="937.68115942028987" y="751.63043478260875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tvI-3c-AKY">
@@ -138,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0t-JG-yiX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936.2318840579712" y="76.630434782608702"/>
+            <point key="canvasLocation" x="1891" y="33"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uJ1-cK-3le">
