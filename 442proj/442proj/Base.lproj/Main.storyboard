@@ -18,27 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUD-tM-eVc">
-                                <rect key="frame" x="0.0" y="658" width="76" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Camera" image="AppleLogo"/>
-                                <connections>
-                                    <action selector="CameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Js8-pz-0Vb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya9-gx-AFp">
-                                <rect key="frame" x="75" y="658" width="81" height="79"/>
+                                <rect key="frame" x="111" y="353" width="192" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Main" image="LaunchingImage"/>
+                                <state key="normal" title="Camera Roll">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="MainAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cAM-JO-PXs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mls-x5-GQi">
-                                <rect key="frame" x="201" y="501" width="116" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mls-x5-GQi">
+                                <rect key="frame" x="111" y="430" width="192" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Mission"/>
+                                <state key="normal" title="How To Play">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
+                                    <action selector="HowToPlayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LEy-aB-CFH"/>
                                     <segue destination="nVa-Hq-WEB" kind="push" id="Kp3-bn-9zI"/>
                                 </connections>
                             </button>
@@ -56,18 +53,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxe-rX-GYG">
-                                <rect key="frame" x="291" y="635" width="52" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxe-rX-GYG">
+                                <rect key="frame" x="111" y="507" width="192" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Reward"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Reward">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
+                                    <action selector="RewardAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKQ-DF-eLd"/>
                                     <segue destination="CMa-yc-oyp" kind="push" id="3gP-Zu-Wkp"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mD6-y0-Ruh">
-                                <rect key="frame" x="0.0" y="211" width="414" height="243"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUD-tM-eVc">
+                                <rect key="frame" x="111" y="276" width="192" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="CameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Js8-pz-0Vb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -75,7 +86,9 @@
                     <navigationItem key="navigationItem" id="OTP-S9-WM6"/>
                     <connections>
                         <outlet property="Camera" destination="kUD-tM-eVc" id="OP9-dt-vZS"/>
+                        <outlet property="HowToPlay" destination="Mls-x5-GQi" id="jCX-Yq-37D"/>
                         <outlet property="Main" destination="ya9-gx-AFp" id="5Ce-XU-NcI"/>
+                        <outlet property="Reward" destination="jxe-rX-GYG" id="wAD-We-8y9"/>
                         <outlet property="Yo" destination="Fva-vR-30I" id="rD5-HK-1li"/>
                         <outlet property="userImage" destination="mD6-y0-Ruh" id="0I8-gO-q8C"/>
                     </connections>
@@ -178,8 +191,4 @@
             <point key="canvasLocation" x="31.884057971014496" y="33.423913043478265"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="AppleLogo" width="260" height="300"/>
-        <image name="LaunchingImage" width="1080" height="1920"/>
-    </resources>
 </document>

@@ -61,6 +61,8 @@ func add_Mission (key: Int, Latitude: Float, Longitude:Float){
 class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     @IBOutlet weak var Main: UIButton!
     @IBOutlet weak var Camera: UIButton!
+    @IBOutlet weak var Reward: UIButton!
+    @IBOutlet weak var HowToPlay: UIButton!
     @IBOutlet weak var userImage: UIImageView!
     
     
@@ -69,6 +71,14 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //   9/23 set up the GUI for 4 buttons on the main screen
+        //   Author: weijin
+        Camera.setButtonGUI()
+        Main.setButtonGUI()
+        HowToPlay.setButtonGUI()
+        Reward.setButtonGUI()
+        
         let testing = Mission_Storage()
         testing.Latitude = 111.11
         testing.Longitude = 100.23
@@ -99,8 +109,12 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     
     
+    @IBAction func RewardAction(_ sender: UIButton) {
+    }
     
     
+    @IBAction func HowToPlayAction(_ sender: UIButton) {
+    }
     
     @IBAction func CameraAction(_ sender: UIButton) {
         
@@ -161,4 +175,17 @@ fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [U
 // Helper function inserted by Swift 4.2 migrator.
 fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
 	return input.rawValue
+}
+//This function is used to set the 4 buttons GUI on the main screen
+extension UIButton{
+    func setButtonGUI(){
+        self.backgroundColor=UIColor.blue
+        self.layer.cornerRadius = self.frame.height/2.0
+        self.setTitleColor(UIColor.white, for: .normal)
+        self.clipsToBounds = true
+        self.layer.shadowColor = UIColor.red.cgColor
+        self.layer.shadowRadius = 30
+        self.layer.shadowOpacity = 0.8
+        self.layer.borderWidth = 2.0;
+    }
 }

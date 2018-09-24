@@ -16,7 +16,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         
         self.Testing.text = Testing_String
-        add_Mission()
+// add_Mission()
         // Do any additional setup after loading the view.
     }
     
