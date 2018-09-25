@@ -5,7 +5,7 @@
 	<key>NSMicrophoneUsageDescription</key>
 	<string></string>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>For Augmented Reality</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

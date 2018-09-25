@@ -15,6 +15,7 @@
 		0BF623ED214EDAF9008FBB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF623EB214EDAF9008FBB12 /* LaunchScreen.storyboard */; };
 		0BF623F8214EDAF9008FBB12 /* _42projTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF623F7214EDAF9008FBB12 /* _42projTests.swift */; };
 		0BF62403214EDAF9008FBB12 /* _42projUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF62402214EDAF9008FBB12 /* _42projUITests.swift */; };
+		363E5557215A9D0600F1A5D5 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E5556215A9D0600F1A5D5 /* ARViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0BF623FE214EDAF9008FBB12 /* 442projUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 442projUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF62402214EDAF9008FBB12 /* _42projUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _42projUITests.swift; sourceTree = "<group>"; };
 		0BF62404214EDAF9008FBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363E5556215A9D0600F1A5D5 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				0BF623E2214EDAF6008FBB12 /* AppDelegate.swift */,
+				363E5556215A9D0600F1A5D5 /* ARViewController.swift */,
 				0BF623E4214EDAF6008FBB12 /* ViewController.swift */,
 				0B80622D2156FDC60054BDA7 /* SecondViewController.swift */,
 				0BF623E6214EDAF6008FBB12 /* Main.storyboard */,
@@ -266,6 +269,7 @@
 				0B80622E2156FDC60054BDA7 /* SecondViewController.swift in Sources */,
 				0BF623E5214EDAF6008FBB12 /* ViewController.swift in Sources */,
 				0BF623E3214EDAF6008FBB12 /* AppDelegate.swift in Sources */,
+				363E5557215A9D0600F1A5D5 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

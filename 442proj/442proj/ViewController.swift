@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewController.swift/
 //  442proj
 //
 //  Created by Jie Chen on 9/16/18.
@@ -118,21 +118,21 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     @IBAction func CameraAction(_ sender: UIButton) {
         
-        if UIImagePickerController.isSourceTypeAvailable(.camera){
-            let imagepicker = UIImagePickerController()
-                imagepicker.delegate = self
-                imagepicker.allowsEditing = false
-                imagepicker.sourceType = UIImagePickerController.SourceType.camera
-                self.present(imagepicker,animated: false,completion: nil)
-        }
-        else{
-            let imagepicker = UIImagePickerController()
-            imagepicker.delegate = self
-            imagepicker.allowsEditing = false
-            imagepicker.sourceType = UIImagePickerController.SourceType.photoLibrary
-            self.present(imagepicker,animated: false,completion: nil)
-            
-        }
+//        if UIImagePickerController.isSourceTypeAvailable(.camera){
+//            let imagepicker = UIImagePickerController()
+//                imagepicker.delegate = self
+//                imagepicker.allowsEditing = false
+//                imagepicker.sourceType = UIImagePickerController.SourceType.camera
+//                self.present(imagepicker,animated: false,completion: nil)
+//        }
+//        else{
+//            let imagepicker = UIImagePickerController()
+//            imagepicker.delegate = self
+//            imagepicker.allowsEditing = false
+//            imagepicker.sourceType = UIImagePickerController.SourceType.photoLibrary
+//            self.present(imagepicker,animated: false,completion: nil)
+//
+//        }
         
     }
     
