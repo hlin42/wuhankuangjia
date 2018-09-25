@@ -77,6 +77,7 @@
                                 </state>
                                 <connections>
                                     <action selector="CameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Js8-pz-0Vb"/>
+                                    <segue destination="FX2-tv-jU4" kind="show" id="wwd-Qn-Zqo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -160,13 +161,22 @@
         <!--View Controller-->
         <scene sceneID="uJ1-cK-3le">
             <objects>
-                <viewController id="FX2-tv-jU4" sceneMemberID="viewController">
+                <viewController id="FX2-tv-jU4" customClass="ARViewController" customModule="_42proj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w8A-4L-9jN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKH-77-OzS">
+                                <rect key="frame" x="0.0" y="91" width="414" height="555"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EwQ-yl-LfE"/>
                     </view>
+                    <connections>
+                        <outlet property="ARSCNView" destination="wKH-77-OzS" id="hwa-dd-gq6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5j-Rw-Wq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
