@@ -10,6 +10,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="go9-Kh-iEV">
+            <objects>
+                <viewController id="IqP-l5-Pwv" customClass="MapViewController" customModule="_42proj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dQn-xU-kYP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vUp-6D-hMm">
+                                <rect key="frame" x="0.0" y="171" width="414" height="565"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Vr8-US-CXS"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="vUp-6D-hMm" id="Vnk-K7-wL3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGb-HT-MR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="-627.71739130434787"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -80,6 +104,15 @@
                                     <segue destination="FX2-tv-jU4" kind="show" id="wwd-Qn-Zqo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHL-ca-in8">
+                                <rect key="frame" x="161" y="584" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <action selector="Map_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nha-YN-Ghe"/>
+                                    <segue destination="IqP-l5-Pwv" kind="show" id="CRQ-PD-kRs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -89,6 +122,7 @@
                         <outlet property="Camera" destination="kUD-tM-eVc" id="OP9-dt-vZS"/>
                         <outlet property="HowToPlay" destination="Mls-x5-GQi" id="jCX-Yq-37D"/>
                         <outlet property="Main" destination="ya9-gx-AFp" id="5Ce-XU-NcI"/>
+                        <outlet property="Map" destination="EHL-ca-in8" id="EJA-QE-z24"/>
                         <outlet property="Reward" destination="jxe-rX-GYG" id="wAD-We-8y9"/>
                         <outlet property="Yo" destination="Fva-vR-30I" id="rD5-HK-1li"/>
                         <outlet property="userImage" destination="mD6-y0-Ruh" id="0I8-gO-q8C"/>
@@ -106,9 +140,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-vR-30I">
-                                <rect key="frame" x="20" y="64" width="394" height="672"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJW-uf-Sct">
+                                <rect key="frame" x="112" y="99" width="154" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test_add"/>
+                                <connections>
+                                    <action selector="Button_add_Mission:" destination="CMa-yc-oyp" eventType="touchUpInside" id="zMh-du-OqD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2222" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-vR-30I">
+                                <rect key="frame" x="0.0" y="181" width="318.99999999999983" height="480.99999999999989"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -119,6 +161,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="TOO-K9-jrb"/>
                     <connections>
+                        <outlet property="Test_add" destination="UJW-uf-Sct" id="U4R-FQ-5FU"/>
                         <outlet property="Testing" destination="Fva-vR-30I" id="xSd-hX-XYI"/>
                     </connections>
                 </viewController>
@@ -180,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5j-Rw-Wq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7344.9275362318849" y="202.98913043478262"/>
+            <point key="canvasLocation" x="3058" y="33"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bBQ-P1-Xr7">
