@@ -10,6 +10,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="go9-Kh-iEV">
+            <objects>
+                <viewController id="IqP-l5-Pwv" customClass="MapViewController" customModule="_42proj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dQn-xU-kYP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vUp-6D-hMm">
+                                <rect key="frame" x="0.0" y="171" width="414" height="565"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Vr8-US-CXS"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="vUp-6D-hMm" id="Vnk-K7-wL3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGb-HT-MR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="-627.71739130434787"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -80,6 +104,15 @@
                                     <segue destination="FX2-tv-jU4" kind="show" id="wwd-Qn-Zqo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHL-ca-in8">
+                                <rect key="frame" x="161" y="584" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <action selector="Map_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nha-YN-Ghe"/>
+                                    <segue destination="IqP-l5-Pwv" kind="show" id="CRQ-PD-kRs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -89,6 +122,7 @@
                         <outlet property="Camera" destination="kUD-tM-eVc" id="OP9-dt-vZS"/>
                         <outlet property="HowToPlay" destination="Mls-x5-GQi" id="jCX-Yq-37D"/>
                         <outlet property="Main" destination="ya9-gx-AFp" id="5Ce-XU-NcI"/>
+                        <outlet property="Map" destination="EHL-ca-in8" id="EJA-QE-z24"/>
                         <outlet property="Reward" destination="jxe-rX-GYG" id="wAD-We-8y9"/>
                         <outlet property="Yo" destination="Fva-vR-30I" id="rD5-HK-1li"/>
                         <outlet property="userImage" destination="mD6-y0-Ruh" id="0I8-gO-q8C"/>
