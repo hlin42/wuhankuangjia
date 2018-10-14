@@ -11,16 +11,20 @@ import UIKit
 class SecondViewController: UIViewController {
     @IBOutlet weak var Testing: UILabel!
     
+    @IBOutlet weak var Test_add: UIButton!
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
         self.Testing.text = Testing_String
 // add_Mission()
         // Do any additional setup after loading the view.
     }
     
 
+    @IBAction func Button_add_Mission(_ sender: Any) {
+        Testing_String += "Hello  "
+        viewDidLoad()
+    }
     /*
     // MARK: - Navigation
 

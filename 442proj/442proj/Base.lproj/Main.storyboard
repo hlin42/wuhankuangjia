@@ -106,9 +106,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-vR-30I">
-                                <rect key="frame" x="20" y="64" width="394" height="672"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJW-uf-Sct">
+                                <rect key="frame" x="112" y="99" width="154" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test_add"/>
+                                <connections>
+                                    <action selector="Button_add_Mission:" destination="CMa-yc-oyp" eventType="touchUpInside" id="zMh-du-OqD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2222" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-vR-30I">
+                                <rect key="frame" x="46.443037595420947" y="255" width="318.99999999999983" height="480.99999999999989"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -119,6 +127,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="TOO-K9-jrb"/>
                     <connections>
+                        <outlet property="Test_add" destination="UJW-uf-Sct" id="U4R-FQ-5FU"/>
                         <outlet property="Testing" destination="Fva-vR-30I" id="xSd-hX-XYI"/>
                     </connections>
                 </viewController>
