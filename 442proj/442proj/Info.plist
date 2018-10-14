@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSMicrophoneUsageDescription</key>
-	<string></string>
 	<key>NSCameraUsageDescription</key>
 	<string>For Augmented Reality</string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -30,6 +28,8 @@
 	<string>Main</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Can App access your location?</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Hi</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
