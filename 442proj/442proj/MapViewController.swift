@@ -29,6 +29,13 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         map.setRegion(region, animated: true)
         
         self.map.showsUserLocation = true
+        
+        let pin = MKPointAnnotation()
+        pin.coordinate.latitude = 43.0022062
+        pin.coordinate.longitude = -78.7876327
+        pin.title = "Home"
+        map.addAnnotation(pin)
+        
     }
     
     override func viewDidLoad() {
