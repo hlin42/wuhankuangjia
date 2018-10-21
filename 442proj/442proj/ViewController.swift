@@ -17,6 +17,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     @IBOutlet weak var HowToPlay: UIButton!
     @IBOutlet weak var userImage: UIImageView!
     
+    @IBOutlet weak var Map: UIButton!
     
     
     
@@ -60,6 +61,9 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     
     
+    @IBAction func Map_Action(_ sender: Any) {
+        
+    }
     
     @IBAction func RewardAction(_ sender: UIButton) {
     }
