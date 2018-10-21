@@ -7,7 +7,7 @@
 //
 
 import UIKit
-var Testing_String = "YOYOYOOYOY"
+var Testing_String = ""
 
 
 class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
@@ -17,11 +17,16 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     @IBOutlet weak var HowToPlay: UIButton!
     @IBOutlet weak var userImage: UIImageView!
     
+    @IBOutlet weak var AddMission: UIButton!
     @IBOutlet weak var Map: UIButton!
     
     
     
     override func viewDidLoad() {
+        
+        if let x = UserDefaults.standard.object(forKey: "TheData") as? [Int : Mission_Storage]{
+            Overall_Data_Storage = x
+        }
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -32,11 +37,6 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         HowToPlay.setButtonGUI()
         Reward.setButtonGUI()
    
-        let testing = Mission_Storage()
-        testing.Latitude = 111.11
-        testing.Longitude = 100.23
-        Overall_Data_Storage[0] = testing
-        Testing_String = (Overall_Data_Storage[0]?.Latitude.description)! + " and " + testing.Longitude.description
     }
 
     
