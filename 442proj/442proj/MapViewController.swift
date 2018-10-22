@@ -12,10 +12,15 @@ import CoreLocation
 
 
 
-class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate
+    {
     
     //MAP
     @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    var searchActive : Bool = true
+    
+    
     
     let manager = CLLocationManager()
     
@@ -46,6 +51,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
+        searchBar.delegate = self
         
         
     }
@@ -54,6 +60,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
 }
