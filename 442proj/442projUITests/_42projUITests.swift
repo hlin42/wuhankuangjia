@@ -87,5 +87,9 @@ class _42projUITests: XCTestCase {
         app.launch()
         XCTAssertTrue(app.buttons["Map"].isHittable)
     }
-    
+    func testARCam_Func(){
+        app.launch()
+        app.buttons["Play"].tap()
+        app.tap()
+    }
 }
