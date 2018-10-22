@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B80622E2156FDC60054BDA7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80622D2156FDC60054BDA7 /* SecondViewController.swift */; };
+		0BA463D4217D0DFC00C0A6DB /* AddMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA463D3217D0DFC00C0A6DB /* AddMissionViewController.swift */; };
 		0BF623E3214EDAF6008FBB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF623E2214EDAF6008FBB12 /* AppDelegate.swift */; };
 		0BF623E5214EDAF6008FBB12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF623E4214EDAF6008FBB12 /* ViewController.swift */; };
 		0BF623E8214EDAF6008FBB12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF623E6214EDAF6008FBB12 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0B80622D2156FDC60054BDA7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0BA463D3217D0DFC00C0A6DB /* AddMissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMissionViewController.swift; sourceTree = "<group>"; };
 		0BF623DF214EDAF6008FBB12 /* 442proj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 442proj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF623E2214EDAF6008FBB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BF623E4214EDAF6008FBB12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				0BF623EE214EDAF9008FBB12 /* Info.plist */,
 				0BF684A82173D4B6004EF7A9 /* Mission.swift */,
 				42FFA2942173E11700660E11 /* MapViewController.swift */,
+				0BA463D3217D0DFC00C0A6DB /* AddMissionViewController.swift */,
 			);
 			path = 442proj;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				42FFA2952173E11700660E11 /* MapViewController.swift in Sources */,
 				0BF623E5214EDAF6008FBB12 /* ViewController.swift in Sources */,
 				0BF623E3214EDAF6008FBB12 /* AppDelegate.swift in Sources */,
+				0BA463D4217D0DFC00C0A6DB /* AddMissionViewController.swift in Sources */,
 				0BF684A92173D4B6004EF7A9 /* Mission.swift in Sources */,
 				363E5557215A9D0600F1A5D5 /* ARViewController.swift in Sources */,
 			);
