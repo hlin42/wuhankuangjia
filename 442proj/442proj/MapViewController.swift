@@ -17,8 +17,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     //MAP
     @IBOutlet weak var map: MKMapView!
-    @IBOutlet weak var searchBar: UISearchBar!
-    var searchActive : Bool = true
     
     
     
@@ -51,7 +49,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
-        searchBar.delegate = self
+
         
         
     }
