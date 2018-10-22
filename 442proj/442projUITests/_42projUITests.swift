@@ -9,18 +9,13 @@
 import XCTest
 
 class _42projUITests: XCTestCase {
-        
+    var app : XCUIApplication!
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
+        app = XCUIApplication()
+        app.launchArguments.append("--uitesting")
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
     override func tearDown() {
@@ -28,9 +23,69 @@ class _42projUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testPlayButton_exist() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.launch()
+        XCTAssertTrue(app.buttons["Play"].exists)
+
+    }
+    func testCamera_RollButton_exist() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.launch()
+        XCTAssertTrue(app.buttons["Camera Roll"].exists)
+    }
+    func testHowToPlayButton_exist() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.launch()
+        XCTAssertTrue(app.buttons["How To Play"].exists)
+    }
+    func testRewardButton_exist() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.launch()
+        XCTAssertTrue(app.buttons["Reward"].exists)
+    }
+    func testMapButton_exist() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.launch()
+        XCTAssertTrue(app.buttons["Map"].exists)
+    }
+    
+    
+    func testPlayButton_hit() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.launch()
+        XCTAssertTrue(app.buttons["Play"].isHittable)
+        
+    }
+    func testCamera_RollButton_hit() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.launch()
+        XCTAssertTrue(app.buttons["Camera Roll"].isHittable)
+    }
+    func testHowToPlayButton_hit() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.launch()
+        XCTAssertTrue(app.buttons["How To Play"].isHittable)
+    }
+    func testRewardButton_hit() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.launch()
+        XCTAssertTrue(app.buttons["Reward"].isHittable)
+    }
+    func testMapButton_hit() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.launch()
+        XCTAssertTrue(app.buttons["Map"].isHittable)
     }
     
 }
