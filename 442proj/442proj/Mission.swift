@@ -29,11 +29,12 @@ public func add_Mission (key: Int, Latitude: Float, Longitude:Float, Description
         temp.description = Description
         temp.hint = Hint
         while(latest_Mission!.has_Next ){ //last_Mission will the currently last step
-            latest_Mission?.has_Next = true // changing the value to true has no impact on pervious steps
-            // but since we are making currenly last step into second to last
-            // it is necessary
+            
             latest_Mission = latest_Mission!.Next
         }
+        latest_Mission?.has_Next = true // changing the value to true has no impact on pervious steps
+        // but since we are making currenly last step into second to last
+        // it is necessary
         // When we exit the loop latest_Mission.has_Next is false, that means last_Mission.Next is null
         // Following line is to assign our pre declare temp Mission_Storage class to last_Mission.Next
         latest_Mission?.Next = temp
