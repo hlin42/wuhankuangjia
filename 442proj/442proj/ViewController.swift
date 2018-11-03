@@ -36,9 +36,11 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         Main.setButtonGUI()
         HowToPlay.setButtonGUI()
         Reward.setButtonGUI()
-   
+        Map.setButtonGUI()
+        AddMission.setButtonGUI()
+        
     }
-
+    
     
     
     
@@ -53,7 +55,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     
     
     
@@ -74,21 +76,21 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     @IBAction func CameraAction(_ sender: UIButton) {
         
-//        if UIImagePickerController.isSourceTypeAvailable(.camera){
-//            let imagepicker = UIImagePickerController()
-//                imagepicker.delegate = self
-//                imagepicker.allowsEditing = false
-//                imagepicker.sourceType = UIImagePickerController.SourceType.camera
-//                self.present(imagepicker,animated: false,completion: nil)
-//        }
-//        else{
-//            let imagepicker = UIImagePickerController()
-//            imagepicker.delegate = self
-//            imagepicker.allowsEditing = false
-//            imagepicker.sourceType = UIImagePickerController.SourceType.photoLibrary
-//            self.present(imagepicker,animated: false,completion: nil)
-//
-//        }
+        //        if UIImagePickerController.isSourceTypeAvailable(.camera){
+        //            let imagepicker = UIImagePickerController()
+        //                imagepicker.delegate = self
+        //                imagepicker.allowsEditing = false
+        //                imagepicker.sourceType = UIImagePickerController.SourceType.camera
+        //                self.present(imagepicker,animated: false,completion: nil)
+        //        }
+        //        else{
+        //            let imagepicker = UIImagePickerController()
+        //            imagepicker.delegate = self
+        //            imagepicker.allowsEditing = false
+        //            imagepicker.sourceType = UIImagePickerController.SourceType.photoLibrary
+        //            self.present(imagepicker,animated: false,completion: nil)
+        //
+        //        }
         
     }
     
@@ -98,7 +100,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     
     @IBAction func MainAction(_ sender: UIButton) {
-
+        
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .photoLibrary
@@ -106,9 +108,9 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-// Local variable inserted by Swift 4.2 migrator.
-let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
-
+        // Local variable inserted by Swift 4.2 migrator.
+        let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+        
         if let image=info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as? UIImage {
             userImage.image = image
         }
@@ -125,13 +127,40 @@ let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
 
 // Helper function inserted by Swift 4.2 migrator.
 fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
-	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+    return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
 }
 
 // Helper function inserted by Swift 4.2 migrator.
 fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
-	return input.rawValue
+    return input.rawValue
 }
+
+
+
+extension UIColor {
+    
+    func rgb() -> Int? {
+        var fRed : CGFloat = 0
+        var fGreen : CGFloat = 0
+        var fBlue : CGFloat = 0
+        var fAlpha: CGFloat = 0
+        if self.getRed(&fRed, green: &fGreen, blue: &fBlue, alpha: &fAlpha) {
+            let iRed = Int(fRed * 255.0)
+            let iGreen = Int(fGreen * 255.0)
+            let iBlue = Int(fBlue * 255.0)
+            let iAlpha = Int(fAlpha * 255.0)
+            
+            //  (Bits 24-31 are alpha, 16-23 are red, 8-15 are green, 0-7 are blue).
+            let rgb = (iAlpha << 24) + (iRed << 16) + (iGreen << 8) + iBlue
+            return rgb
+        } else {
+            // Could not extract RGBA components:
+            return nil
+        }
+    }
+}
+
+
 //This function is used to set the 4 buttons GUI on the main screen
 extension UIButton{
     func setButtonGUI(){
@@ -139,9 +168,20 @@ extension UIButton{
         self.layer.cornerRadius = self.frame.height/2.0
         self.setTitleColor(UIColor.white, for: .normal)
         self.clipsToBounds = true
+        self.layer.borderColor = UIColor.white.cgColor
         self.layer.shadowColor = UIColor.red.cgColor
         self.layer.shadowRadius = 30
         self.layer.shadowOpacity = 0.8
         self.layer.borderWidth = 2.0;
+        //        self.backgroundColor = UIColor.red
+        //        self.clipsToBounds = true
+        //        self.layer.cornerRadius = self.frame.height/2.0
+        //        self.layer.borderWidth = 2.0;
+        //        self.layer.borderColor = UIColor.white.cgColor
+        //
+        //        self.layer.shadowOpacity = 1.0
+        //        self.layer.shadowRadius = 1.0
+        //        self.layer.shadowOffset = CGSize(width: -2, height: 2);
+        
     }
 }
