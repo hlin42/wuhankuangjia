@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		367AEDD5215596F1003E6422 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AEDD4215596F1003E6422 /* AppDelegate.swift */; };
 		367AEDD7215596F1003E6422 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AEDD6215596F1003E6422 /* ViewController.swift */; };
-		367AEDDA215596F1003E6422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367AEDD8215596F1003E6422 /* Main.storyboard */; };
 		367AEDDC215596F2003E6422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 367AEDDB215596F2003E6422 /* Assets.xcassets */; };
 		367AEDDF215596F2003E6422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367AEDDD215596F2003E6422 /* LaunchScreen.storyboard */; };
 		367AEDEA215596F2003E6422 /* userLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AEDE9215596F2003E6422 /* userLocationTests.swift */; };
 		367AEDF5215596F2003E6422 /* userLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AEDF4215596F2003E6422 /* userLocationUITests.swift */; };
 		367AEE04215597B8003E6422 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367AEE03215597B8003E6422 /* CoreLocation.framework */; };
+		AA397B6B2156BF100030ACC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367AEDD8215596F1003E6422 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,9 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA397B6B2156BF100030ACC7 /* Main.storyboard in Resources */,
 				367AEDDF215596F2003E6422 /* LaunchScreen.storyboard in Resources */,
 				367AEDDC215596F2003E6422 /* Assets.xcassets in Resources */,
-				367AEDDA215596F1003E6422 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RJQXMK8Y5;
 				INFOPLIST_FILE = userLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RJQXMK8Y5;
 				INFOPLIST_FILE = userLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
