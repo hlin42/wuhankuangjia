@@ -414,15 +414,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5eP-PE-GJm" id="dAd-Fe-s9P">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fuck This Shit" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Mu-yI-hnN">
-                                            <rect key="frame" x="20" y="3" width="113" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <nil key="textColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -431,9 +422,6 @@
                             <outlet property="delegate" destination="Ep3-g2-4KW" id="JNB-2v-8ly"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="testlable" destination="7Mu-yI-hnN" id="TRh-Pc-ex7"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9QR-Gl-Ggn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -441,7 +429,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="235" height="53"/>
-        <image name="Image-1" width="1200" height="976.5"/>
+        <image name="Image" width="117" height="26"/>
+        <image name="Image-1" width="800" height="651"/>
     </resources>
 </document>
