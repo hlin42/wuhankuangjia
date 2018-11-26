@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B80622E2156FDC60054BDA7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80622D2156FDC60054BDA7 /* SecondViewController.swift */; };
+		0BA463D4217D0DFC00C0A6DB /* AddMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA463D3217D0DFC00C0A6DB /* AddMissionViewController.swift */; };
 		0BF623E3214EDAF6008FBB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF623E2214EDAF6008FBB12 /* AppDelegate.swift */; };
 		0BF623E5214EDAF6008FBB12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF623E4214EDAF6008FBB12 /* ViewController.swift */; };
 		0BF623E8214EDAF6008FBB12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF623E6214EDAF6008FBB12 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		0BF62403214EDAF9008FBB12 /* _42projUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF62402214EDAF9008FBB12 /* _42projUITests.swift */; };
 		0BF684A92173D4B6004EF7A9 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF684A82173D4B6004EF7A9 /* Mission.swift */; };
 		363E5557215A9D0600F1A5D5 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E5556215A9D0600F1A5D5 /* ARViewController.swift */; };
+		36C8894121965C5100CAAADC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C8894021965C5100CAAADC /* TableViewController.swift */; };
 		42FFA2952173E11700660E11 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FFA2942173E11700660E11 /* MapViewController.swift */; };
 		42FFA2982173E30500660E11 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFA2972173E30500660E11 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0B80622D2156FDC60054BDA7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0BA463D3217D0DFC00C0A6DB /* AddMissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMissionViewController.swift; sourceTree = "<group>"; };
 		0BF623DF214EDAF6008FBB12 /* 442proj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 442proj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF623E2214EDAF6008FBB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BF623E4214EDAF6008FBB12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		0BF62404214EDAF9008FBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BF684A82173D4B6004EF7A9 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		363E5556215A9D0600F1A5D5 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		36C8894021965C5100CAAADC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		42FFA2942173E11700660E11 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		42FFA2972173E30500660E11 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -113,6 +117,7 @@
 				0BF623E2214EDAF6008FBB12 /* AppDelegate.swift */,
 				363E5556215A9D0600F1A5D5 /* ARViewController.swift */,
 				0BF623E4214EDAF6008FBB12 /* ViewController.swift */,
+				36C8894021965C5100CAAADC /* TableViewController.swift */,
 				0B80622D2156FDC60054BDA7 /* SecondViewController.swift */,
 				0BF623E6214EDAF6008FBB12 /* Main.storyboard */,
 				0BF623E9214EDAF9008FBB12 /* Assets.xcassets */,
@@ -120,6 +125,7 @@
 				0BF623EE214EDAF9008FBB12 /* Info.plist */,
 				0BF684A82173D4B6004EF7A9 /* Mission.swift */,
 				42FFA2942173E11700660E11 /* MapViewController.swift */,
+				0BA463D3217D0DFC00C0A6DB /* AddMissionViewController.swift */,
 			);
 			path = 442proj;
 			sourceTree = "<group>";
@@ -212,7 +218,7 @@
 		0BF623D7214EDAF6008FBB12 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Jie Chen";
 				TargetAttributes = {
@@ -287,7 +293,9 @@
 				0B80622E2156FDC60054BDA7 /* SecondViewController.swift in Sources */,
 				42FFA2952173E11700660E11 /* MapViewController.swift in Sources */,
 				0BF623E5214EDAF6008FBB12 /* ViewController.swift in Sources */,
+				36C8894121965C5100CAAADC /* TableViewController.swift in Sources */,
 				0BF623E3214EDAF6008FBB12 /* AppDelegate.swift in Sources */,
+				0BA463D4217D0DFC00C0A6DB /* AddMissionViewController.swift in Sources */,
 				0BF684A92173D4B6004EF7A9 /* Mission.swift in Sources */,
 				363E5557215A9D0600F1A5D5 /* ARViewController.swift in Sources */,
 			);
@@ -464,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F6HB29Z2BE;
+				DEVELOPMENT_TEAM = NDXW42YCC7;
 				INFOPLIST_FILE = 442proj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,7 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F6HB29Z2BE;
+				DEVELOPMENT_TEAM = NDXW42YCC7;
 				INFOPLIST_FILE = 442proj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -544,6 +552,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NDXW42YCC7;
 				INFOPLIST_FILE = 442projUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -563,6 +572,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NDXW42YCC7;
 				INFOPLIST_FILE = 442projUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
