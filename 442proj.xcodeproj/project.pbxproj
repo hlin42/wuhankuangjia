@@ -18,7 +18,6 @@
 		0BF62403214EDAF9008FBB12 /* _42projUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF62402214EDAF9008FBB12 /* _42projUITests.swift */; };
 		0BF684A92173D4B6004EF7A9 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF684A82173D4B6004EF7A9 /* Mission.swift */; };
 		363E5557215A9D0600F1A5D5 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E5556215A9D0600F1A5D5 /* ARViewController.swift */; };
-		36C8894121965C5100CAAADC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C8894021965C5100CAAADC /* TableViewController.swift */; };
 		42FFA2952173E11700660E11 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FFA2942173E11700660E11 /* MapViewController.swift */; };
 		42FFA2982173E30500660E11 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFA2972173E30500660E11 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -58,7 +57,6 @@
 		0BF62404214EDAF9008FBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BF684A82173D4B6004EF7A9 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		363E5556215A9D0600F1A5D5 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
-		36C8894021965C5100CAAADC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		42FFA2942173E11700660E11 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		42FFA2972173E30500660E11 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -117,7 +115,6 @@
 				0BF623E2214EDAF6008FBB12 /* AppDelegate.swift */,
 				363E5556215A9D0600F1A5D5 /* ARViewController.swift */,
 				0BF623E4214EDAF6008FBB12 /* ViewController.swift */,
-				36C8894021965C5100CAAADC /* TableViewController.swift */,
 				0B80622D2156FDC60054BDA7 /* SecondViewController.swift */,
 				0BF623E6214EDAF6008FBB12 /* Main.storyboard */,
 				0BF623E9214EDAF9008FBB12 /* Assets.xcassets */,
@@ -293,7 +290,6 @@
 				0B80622E2156FDC60054BDA7 /* SecondViewController.swift in Sources */,
 				42FFA2952173E11700660E11 /* MapViewController.swift in Sources */,
 				0BF623E5214EDAF6008FBB12 /* ViewController.swift in Sources */,
-				36C8894121965C5100CAAADC /* TableViewController.swift in Sources */,
 				0BF623E3214EDAF6008FBB12 /* AppDelegate.swift in Sources */,
 				0BA463D4217D0DFC00C0A6DB /* AddMissionViewController.swift in Sources */,
 				0BF684A92173D4B6004EF7A9 /* Mission.swift in Sources */,
