@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya9-gx-AFp">
-                                <rect key="frame" x="126" y="321" width="159" height="50"/>
+                                <rect key="frame" x="126" y="279" width="159" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Camera Roll" backgroundImage="Image">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mls-x5-GQi">
-                                <rect key="frame" x="126" y="395" width="159" height="50"/>
+                                <rect key="frame" x="126" y="349" width="159" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="How To Play" backgroundImage="Image">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,7 +87,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxe-rX-GYG">
-                                <rect key="frame" x="127" y="469" width="158" height="53"/>
+                                <rect key="frame" x="127" y="421" width="158" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Mission List" backgroundImage="Image">
@@ -103,7 +103,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHL-ca-in8">
-                                <rect key="frame" x="127" y="619" width="158" height="50"/>
+                                <rect key="frame" x="126" y="564" width="159" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Map" backgroundImage="Image">
@@ -115,18 +115,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJW-uf-Sct">
-                                <rect key="frame" x="126" y="544" width="159" height="53"/>
+                                <rect key="frame" x="126" y="494" width="159" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Mission" backgroundImage="Image">
                                     <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
                                     <action selector="Button_add_Mission:" destination="CMa-yc-oyp" eventType="touchUpInside" id="zMh-du-OqD"/>
+                                    <action selector="addMission:" destination="BYZ-38-t0r" eventType="touchUpInside" id="geV-BK-DV4"/>
                                     <segue destination="2If-g0-W3P" kind="show" id="dO3-0i-bpL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUD-tM-eVc">
-                                <rect key="frame" x="126" y="245" width="159" height="50"/>
+                                <rect key="frame" x="126" y="210" width="159" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play" backgroundImage="Image">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -136,12 +137,23 @@
                                     <segue destination="FX2-tv-jU4" kind="show" id="wwd-Qn-Zqo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llS-xX-OGA">
+                                <rect key="frame" x="126" y="635" width="159" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Achievements" backgroundImage="Image">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="achievements:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jYw-AP-JZh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="OTP-S9-WM6"/>
                     <connections>
+                        <outlet property="Achievements" destination="llS-xX-OGA" id="eEY-SV-HBZ"/>
                         <outlet property="AddMission" destination="UJW-uf-Sct" id="Xnd-08-d8j"/>
                         <outlet property="Camera" destination="kUD-tM-eVc" id="OP9-dt-vZS"/>
                         <outlet property="HowToPlay" destination="Mls-x5-GQi" id="jCX-Yq-37D"/>
@@ -189,6 +201,9 @@
                                 <rect key="frame" x="130" y="176" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Accept Mission"/>
+                                <connections>
+                                    <segue destination="mJe-7e-soD" kind="show" id="QYI-T4-GuF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -203,6 +218,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSN-Q2-Cax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="115.94202898550725" y="774.45652173913049"/>
+        </scene>
+        <!--Mini Game View Controller-->
+        <scene sceneID="4t5-Lo-Dia">
+            <objects>
+                <viewController id="mJe-7e-soD" customClass="MiniGameViewController" customModule="_42proj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8xX-oC-Rxu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arskView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1st-Ik-eIc">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arskView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="X1k-9g-EYM"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="1st-Ik-eIc" id="ReP-LQ-1Vg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pN8-rs-iAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="1533.4239130434785"/>
         </scene>
         <!--Add Mission View Controller-->
         <scene sceneID="Sad-ae-EgM">
@@ -417,9 +456,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKH-77-OzS">
-                                <rect key="frame" x="0.0" y="91" width="414" height="555"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="597"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oh6-vz-JLY">
+                                <rect key="frame" x="172" y="679" width="71" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Capture"/>
+                                <connections>
+                                    <action selector="Capture:" destination="FX2-tv-jU4" eventType="touchUpInside" id="ZyJ-iI-i6b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EwQ-yl-LfE"/>
@@ -430,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5j-Rw-Wq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3058" y="33"/>
+            <point key="canvasLocation" x="2713.04347826087" y="32.608695652173914"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bBQ-P1-Xr7">
@@ -480,7 +527,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="235" height="53"/>
-        <image name="Image-1" width="1200" height="976.5"/>
+        <image name="Image" width="117" height="26"/>
+        <image name="Image-1" width="800" height="651"/>
     </resources>
 </document>
