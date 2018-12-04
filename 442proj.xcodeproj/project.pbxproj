@@ -17,6 +17,7 @@
 		0BF623F8214EDAF9008FBB12 /* _42projTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF623F7214EDAF9008FBB12 /* _42projTests.swift */; };
 		0BF62403214EDAF9008FBB12 /* _42projUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF62402214EDAF9008FBB12 /* _42projUITests.swift */; };
 		0BF684A92173D4B6004EF7A9 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF684A82173D4B6004EF7A9 /* Mission.swift */; };
+		3634712121B621B6000A557C /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634712021B621B6000A557C /* AchievementViewController.swift */; };
 		363E5557215A9D0600F1A5D5 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E5556215A9D0600F1A5D5 /* ARViewController.swift */; };
 		36B64F6B21B60A36009484F7 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B64F6A21B60A36009484F7 /* Scene.swift */; };
 		36B64F6C21B60B99009484F7 /* MiniGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B64F6821B607BF009484F7 /* MiniGameViewController.swift */; };
@@ -61,6 +62,7 @@
 		0BF62402214EDAF9008FBB12 /* _42projUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _42projUITests.swift; sourceTree = "<group>"; };
 		0BF62404214EDAF9008FBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BF684A82173D4B6004EF7A9 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		3634712021B621B6000A557C /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
 		363E5556215A9D0600F1A5D5 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		36B64F6821B607BF009484F7 /* MiniGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameViewController.swift; sourceTree = "<group>"; };
 		36B64F6A21B60A36009484F7 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				36C8894021965C5100CAAADC /* TableViewController.swift */,
 				0B80622D2156FDC60054BDA7 /* SecondViewController.swift */,
 				0BF623E6214EDAF6008FBB12 /* Main.storyboard */,
+				3634712021B621B6000A557C /* AchievementViewController.swift */,
 				36B64F6A21B60A36009484F7 /* Scene.swift */,
 				36B64F6821B607BF009484F7 /* MiniGameViewController.swift */,
 				0BF623E9214EDAF9008FBB12 /* Assets.xcassets */,
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3634712121B621B6000A557C /* AchievementViewController.swift in Sources */,
 				0B80622E2156FDC60054BDA7 /* SecondViewController.swift in Sources */,
 				36B64F6B21B60A36009484F7 /* Scene.swift in Sources */,
 				42FFA2952173E11700660E11 /* MapViewController.swift in Sources */,
