@@ -189,6 +189,9 @@
                                 <rect key="frame" x="130" y="176" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Accept Mission"/>
+                                <connections>
+                                    <segue destination="mJe-7e-soD" kind="show" id="QYI-T4-GuF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -203,6 +206,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSN-Q2-Cax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="115.94202898550725" y="774.45652173913049"/>
+        </scene>
+        <!--Mini Game View Controller-->
+        <scene sceneID="4t5-Lo-Dia">
+            <objects>
+                <viewController id="mJe-7e-soD" customClass="MiniGameViewController" customModule="_42proj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8xX-oC-Rxu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arskView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1st-Ik-eIc">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arskView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="X1k-9g-EYM"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="1st-Ik-eIc" id="ReP-LQ-1Vg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pN8-rs-iAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="1533.4239130434785"/>
         </scene>
         <!--Add Mission View Controller-->
         <scene sceneID="Sad-ae-EgM">
