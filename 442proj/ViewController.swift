@@ -5,22 +5,43 @@
 //  Created by Jie Chen on 9/16/18.
 //  Copyright © 2018 Jie Chen. All rights reserved.
 //
-
+import AVFoundation
 import UIKit
 var Testing_String = ""
 
-
+var audioPlayer: AVAudioPlayer!
 class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     @IBOutlet weak var Main: UIButton!
     @IBOutlet weak var Camera: UIButton!
     @IBOutlet weak var Reward: UIButton!
     @IBOutlet weak var HowToPlay: UIButton!
     @IBOutlet weak var userImage: UIImageView!
-    
     @IBOutlet weak var AddMission: UIButton!
     @IBOutlet weak var Map: UIButton!
+    @IBOutlet weak var Achievements: UIButton!
     
     
+
+
+    func playSoundWith(fileName: String, fileExtension: String) -> Void{
+        let audioSourceURL: URL!
+        audioSourceURL = Bundle.main.url(forResource: fileName, withExtension: fileExtension)
+        
+        if (audioSourceURL == nil){
+            print("cannot play")
+        }
+        else{
+            do{
+                audioPlayer = try AVAudioPlayer.init(contentsOf: audioSourceURL!)
+                audioPlayer.prepareToPlay()
+                audioPlayer.play()
+            }
+            catch{
+                print(error)
+            }
+        }
+        
+    }
     
     override func viewDidLoad() {
         
@@ -38,7 +59,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         Reward.setButtonGUI()
         Map.setButtonGUI()
         AddMission.setButtonGUI()
-        
+        Achievements.setButtonGUI()
     }
     
     
@@ -59,22 +80,35 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     
     
+    @IBAction func addMission(_ sender: Any) {
+        playSoundWith(fileName:"buttonSound", fileExtension: "wav")
+    }
     
     
+    @IBAction func achievements(_ sender: Any) {
+        playSoundWith(fileName:"buttonSound", fileExtension: "wav")
+    }
     
     
     @IBAction func Map_Action(_ sender: Any) {
-        
+        playSoundWith(fileName:"buttonSound", fileExtension: "wav")
     }
     
     @IBAction func RewardAction(_ sender: UIButton) {
+        playSoundWith(fileName:"buttonSound", fileExtension: "wav")
     }
     
     
     @IBAction func HowToPlayAction(_ sender: UIButton) {
+        playSoundWith(fileName:"buttonSound", fileExtension: "wav")
     }
     
     @IBAction func CameraAction(_ sender: UIButton) {
+        playSoundWith(fileName:"buttonSound", fileExtension: "wav")
+        audioPlayer.stop()
+        playSoundWith(fileName:"backgroundsoundEffect", fileExtension: "wav")
+        audioPlayer.numberOfLoops = -1
+        
         
         //        if UIImagePickerController.isSourceTypeAvailable(.camera){
         //            let imagepicker = UIImagePickerController()
@@ -100,7 +134,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     
     @IBAction func MainAction(_ sender: UIButton) {
-        
+        playSoundWith(fileName:"buttonSound", fileExtension: "wav")
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .photoLibrary
