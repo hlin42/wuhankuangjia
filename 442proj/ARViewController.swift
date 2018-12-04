@@ -10,9 +10,12 @@ import UIKit
 import ARKit
 
 class ARViewController: UIViewController {
-
-    @IBOutlet weak var ARSCNView: ARSCNView!
     
+    @IBOutlet weak var ARSCNView: ARSCNView!
+    @IBAction func Capture(_ sender: UIButton) {
+        let imageTake = ARSCNView.snapshot()
+        UIImageWriteToSavedPhotosAlbum(imageTake, self, nil, nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         addBox()
@@ -75,4 +78,6 @@ extension float4x4 {
         let translation = self.columns.3
         return float3(translation.x, translation.y, translation.z)
     }
+    
+    
 }
